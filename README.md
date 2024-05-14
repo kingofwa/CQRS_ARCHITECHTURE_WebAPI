@@ -1,2 +1,2 @@
-# CQRS_ARCHITECHTURE_WebAPI
+# WebAPI
 CQRS  architecture

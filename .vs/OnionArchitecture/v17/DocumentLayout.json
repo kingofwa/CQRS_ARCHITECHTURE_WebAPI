@@ -1,0 +1,496 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Demo\\OnionArchitecture\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|e:\\demo\\onionarchitecture\\application\\features\\userfeatures\\commands\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|solutionrelative:application\\features\\userfeatures\\commands\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|e:\\demo\\onionarchitecture\\webapi_demo\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|solutionrelative:webapi_demo\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|e:\\demo\\onionarchitecture\\application\\features\\productfeatures\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|solutionrelative:application\\features\\productfeatures\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|e:\\demo\\onionarchitecture\\application\\dtos\\useraccessinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|solutionrelative:application\\dtos\\useraccessinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|e:\\demo\\onionarchitecture\\persistence\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|e:\\demo\\onionarchitecture\\persistence\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|e:\\demo\\onionarchitecture\\webapi_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|solutionrelative:webapi_demo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|e:\\demo\\onionarchitecture\\application\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iapplicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|e:\\demo\\onionarchitecture\\webapi_demo\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|solutionrelative:webapi_demo\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|e:\\demo\\onionarchitecture\\webapi_demo\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|solutionrelative:webapi_demo\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|e:\\demo\\onionarchitecture\\domain\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|e:\\demo\\onionarchitecture\\domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|e:\\demo\\onionarchitecture\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|e:\\demo\\onionarchitecture\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|e:\\demo\\onionarchitecture\\persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|e:\\demo\\onionarchitecture\\persistence\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|e:\\demo\\onionarchitecture\\persistence\\migrations\\20240513150906_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\migrations\\20240513150906_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|e:\\demo\\onionarchitecture\\domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|solutionrelative:domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|e:\\demo\\onionarchitecture\\webapi_demo\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|solutionrelative:webapi_demo\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|e:\\demo\\onionarchitecture\\domain\\entities\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\rolepermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|e:\\demo\\onionarchitecture\\domain\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995D8011-4409-4C13-B71B-1904049A79F8}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|e:\\demo\\onionarchitecture\\webapi_demo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8FB4E3AB-F865-46C5-AC54-971BA4B8937D}|WebAPI_DEMO\\WebAPI_DEMO.csproj|solutionrelative:webapi_demo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|e:\\demo\\onionarchitecture\\persistence\\migrations\\20240513145548_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{466212FA-0630-4379-BBC6-F0F45C1E88A4}|Persistence\\Persistence.csproj|solutionrelative:persistence\\migrations\\20240513145548_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513144823_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistence\\Migrations\\20240513144823_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|e:\\demo\\onionarchitecture\\application\\features\\productfeatures\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|solutionrelative:application\\features\\productfeatures\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|e:\\demo\\onionarchitecture\\application\\features\\productfeatures\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|solutionrelative:application\\features\\productfeatures\\queries\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|e:\\demo\\onionarchitecture\\application\\features\\productfeatures\\commands\\deleteproductbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA41EF9-F63D-4173-A9CB-137A91A09371}|Application\\Application.csproj|solutionrelative:application\\features\\productfeatures\\commands\\deleteproductbyidcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513144019_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistence\\Migrations\\20240513144019_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserAccessInfoDto.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Application\\Dtos\\UserAccessInfoDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\UserAccessInfoDto.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Application\\Dtos\\UserAccessInfoDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\UserAccessInfoDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:09:38.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginCommand.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Application\\Features\\UserFeatures\\Commands\\LoginCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\UserFeatures\\Commands\\LoginCommand.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Application\\Features\\UserFeatures\\Commands\\LoginCommand.cs",
+              "RelativeToolTip": "Application\\Features\\UserFeatures\\Commands\\LoginCommand.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwB4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:55:45.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebAPI_DEMO\\Controllers\\ProductController.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebAPI_DEMO\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:35:22.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseApiController.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\BaseApiController.cs",
+              "RelativeDocumentMoniker": "WebAPI_DEMO\\BaseApiController.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\BaseApiController.cs",
+              "RelativeToolTip": "WebAPI_DEMO\\BaseApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:35:32.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateProductCommand.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Application\\Features\\ProductFeatures\\Commands\\CreateProductCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\ProductFeatures\\Commands\\CreateProductCommand.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Application\\Features\\ProductFeatures\\Commands\\CreateProductCommand.cs",
+              "RelativeToolTip": "Application\\Features\\ProductFeatures\\Commands\\CreateProductCommand.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA5wCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:41:56.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI_DEMO\\Program.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\Program.cs",
+              "RelativeToolTip": "WebAPI_DEMO\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAewBcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:37:09.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DefaultRoles.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Persistence\\Seeds\\DefaultRoles.cs",
+              "RelativeDocumentMoniker": "Persistence\\Seeds\\DefaultRoles.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Persistence\\Seeds\\DefaultRoles.cs",
+              "RelativeToolTip": "Persistence\\Seeds\\DefaultRoles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T15:36:21.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DefaultBasicUser.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Persistence\\Seeds\\DefaultBasicUser.cs",
+              "RelativeDocumentMoniker": "Persistence\\Seeds\\DefaultBasicUser.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Persistence\\Seeds\\DefaultBasicUser.cs",
+              "RelativeToolTip": "Persistence\\Seeds\\DefaultBasicUser.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T15:35:30.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebAPI_DEMO\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebAPI_DEMO\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:51:47.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Domain\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:40:36.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\Permission.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Permission.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\Permission.cs",
+              "RelativeToolTip": "Domain\\Entities\\Permission.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:45:22.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Role.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\Role.cs",
+              "RelativeToolTip": "Domain\\Entities\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:44:48.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Application\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IApplicationDbContext.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Application\\Interfaces\\IApplicationDbContext.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:55:03.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:41:00.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240513150906_update.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513150906_update.cs",
+              "RelativeDocumentMoniker": "Persistence\\Migrations\\20240513150906_update.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513150906_update.cs",
+              "RelativeToolTip": "Persistence\\Migrations\\20240513150906_update.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T15:30:56.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Persistence\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Persistence\\DependencyInjection.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Persistence\\DependencyInjection.cs",
+              "RelativeToolTip": "Persistence\\DependencyInjection.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T15:11:39.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Persistence\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Persistence\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Persistence\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Persistence\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:40:30.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20240513145548_v1.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513145548_v1.cs",
+              "RelativeDocumentMoniker": "Persistence\\Migrations\\20240513145548_v1.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513145548_v1.cs",
+              "RelativeToolTip": "Persistence\\Migrations\\20240513145548_v1.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:55:48.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebAPI_DEMO\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebAPI_DEMO\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T15:03:44.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RolePermission.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\RolePermission.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\RolePermission.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\RolePermission.cs",
+              "RelativeToolTip": "Domain\\Entities\\RolePermission.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:46:23.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\UserRole.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\UserRole.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Domain\\Entities\\UserRole.cs",
+              "RelativeToolTip": "Domain\\Entities\\UserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:46:01.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Domain\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Common\\BaseEntity.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Domain\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "Domain\\Common\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:41:04.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WebAPI_DEMO\\appsettings.Development.json",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\WebAPI_DEMO\\appsettings.Development.json",
+              "RelativeToolTip": "WebAPI_DEMO\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-13T15:02:28.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20240513144823_v1.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513144823_v1.cs",
+              "RelativeDocumentMoniker": "Persistence\\Migrations\\20240513144823_v1.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513144823_v1.cs",
+              "RelativeToolTip": "Persistence\\Migrations\\20240513144823_v1.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:48:23.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UpdateProductCommand.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Application\\Features\\ProductFeatures\\Commands\\UpdateProductCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\ProductFeatures\\Commands\\UpdateProductCommand.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Application\\Features\\ProductFeatures\\Commands\\UpdateProductCommand.cs",
+              "RelativeToolTip": "Application\\Features\\ProductFeatures\\Commands\\UpdateProductCommand.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswCUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:42:14.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DeleteProductByIdCommand.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Application\\Features\\ProductFeatures\\Commands\\DeleteProductByIdCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\ProductFeatures\\Commands\\DeleteProductByIdCommand.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Application\\Features\\ProductFeatures\\Commands\\DeleteProductByIdCommand.cs",
+              "RelativeToolTip": "Application\\Features\\ProductFeatures\\Commands\\DeleteProductByIdCommand.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwBYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:42:23.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GetProductByIdQuery.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Application\\Features\\ProductFeatures\\Queries\\GetProductByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\ProductFeatures\\Queries\\GetProductByIdQuery.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Application\\Features\\ProductFeatures\\Queries\\GetProductByIdQuery.cs",
+              "RelativeToolTip": "Application\\Features\\ProductFeatures\\Queries\\GetProductByIdQuery.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwA8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:42:46.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20240513144019_v1.cs",
+              "DocumentMoniker": "E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513144019_v1.cs",
+              "RelativeDocumentMoniker": "Persistence\\Migrations\\20240513144019_v1.cs",
+              "ToolTip": "E:\\Demo\\OnionArchitecture\\Persistence\\Migrations\\20240513144019_v1.cs",
+              "RelativeToolTip": "Persistence\\Migrations\\20240513144019_v1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:40:19.568Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
