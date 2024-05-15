@@ -1,38 +1,53 @@
-Setup :
+## Setup
 
-b1: Vào File: ...\WebApi_CQRS\Persistence\DependencyInjection.cs  để chọn cơ sở dữ liệu mong muốn SqlServer or postgresSql 
+### Bước 1: Setup
+1. **Chọn Cơ Sở Dữ Liệu:**
+   - Mở tệp `DependencyInjection.cs` trong thư mục `Persistence`.
+   - Chọn loại cơ sở dữ liệu mong muốn: SQL Server hoặc PostgreSQL.
 
-b2:Tạo database name: DB_Name
----Nếu sử dụng PostGresSQL : "DefaultConnectionNpgsql": "Host=host; Database=DB_Name; Username=postgres; Password=Hoilamchi123"
----Nếu sử dụng SQL Server : "DefaultConnectionSql": "Server=server;Database=DB_Name;uid=sa;pwd=123456;MultipleActiveResultSets=true;Encrypt=False;",
+### Bước 2: Tạo Database
+2. **Tạo Database:**
+   - Đặt tên database là `DB_Name`.
+   - Cấu hình kết nối:
+     - **Nếu sử dụng PostgreSQL:**
+       ```json
+       "DefaultConnectionNpgsql": "Host=host; Database=DB_Name; Username=postgres; Password=Hoilamchi123"
+       ```
+     - **Nếu sử dụng SQL Server:**
+       ```json
+       "DefaultConnectionSql": "Server=server;Database=DB_Name;uid=sa;pwd=123456;MultipleActiveResultSets=true;Encrypt=False;"
+       ```
 
-b3:Thực thi câu lệnh để seedata và tạo table và quan hệ
-----b3.1 mở cửa sổ manager package console , switch đến layer Persistence
-----b3.2 thực thi câu lệnh: update-database
+### Bước 3: Seed Data và Tạo Table
+3. **Thực Thi Câu Lệnh:**
+   - Mở cửa sổ `Package Manager Console`.
+   - Chuyển đến layer `Persistence`.
+   - Thực thi câu lệnh: `update-database`.
 
-b4: Run project 
+### Bước 4: Chạy Project
+4. **Chạy Project.**
 
-Web API
-==============Account Credentials==============
-Admin:
-Username: admin
-Password: admin123
-Role: Admin (Full access)
+## Web API
+### Tài Khoản và Mật Khẩu
+- **Admin:**
+  - Tên Đăng Nhập: admin
+  - Mật Khẩu: admin123
+  - Vai Trò: Admin (Toàn quyền)
 
-Office:
-Username: office
-Password: office123
-Role: Office (Limited access)
+- **Office:**
+  - Tên Đăng Nhập: office
+  - Mật Khẩu: office123
+  - Vai Trò: Office (Truy cập hạn chế)
 
-Client:
-Username: client
-Password: client123
-Role: Client (Limited access)
+- **Client:**
+  - Tên Đăng Nhập: client
+  - Mật Khẩu: client123
+  - Vai Trò: Client (Truy cập hạn chế)
 
-==============Roles and Permissions==============
-Admin:
-Full access to all features and resources.
-Office:
-Access to view details and lists.
-Client:
-Access to view details and lists.
+### Vai Trò và Quyền Hạn
+- **Admin:**
+  - Toàn quyền truy cập vào tất cả các tính năng và tài nguyên.
+- **Office:**
+  - Truy cập để xem chi tiết và danh sách.
+- **Client:**
+  - Truy cập để xem chi tiết và danh sách.
