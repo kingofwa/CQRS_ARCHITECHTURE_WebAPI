@@ -22,7 +22,8 @@
 3. **Thực Thi Câu Lệnh:**
    - Mở cửa sổ `Package Manager Console`.
    - Chuyển đến layer `Persistence`.
-   - Thực thi câu lệnh: `update-database`.
+   - Thực thi câu lệnh 1: `add-migration contents-migration`.
+   - Thực thi câu lệnh 2: `update-database`.
 
 ### Bước 4: Run Project
 
