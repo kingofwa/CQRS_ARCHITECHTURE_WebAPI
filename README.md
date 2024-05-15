@@ -8,7 +8,7 @@
 ### Bước 2: Tạo Database
 2. **Tạo Database:**
    - Đặt tên database là `DB_Name`.
-   - Cấu hình kết nối:
+   - Cấu hình kết nối trong file appsettings.json:
      - **Nếu sử dụng PostgreSQL:**
        ```json
        "DefaultConnectionNpgsql": "Host=host; Database=DB_Name; Username=Usernameforyou; Password=passforyou"
