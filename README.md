@@ -11,11 +11,11 @@
    - Cấu hình kết nối:
      - **Nếu sử dụng PostgreSQL:**
        ```json
-       "DefaultConnectionNpgsql": "Host=host; Database=DB_Name; Username=postgres; Password=Hoilamchi123"
+       "DefaultConnectionNpgsql": "Host=host; Database=DB_Name; Username=Usernameforyou; Password=passforyou"
        ```
      - **Nếu sử dụng SQL Server:**
        ```json
-       "DefaultConnectionSql": "Server=server;Database=DB_Name;uid=sa;pwd=123456;MultipleActiveResultSets=true;Encrypt=False;"
+       "DefaultConnectionSql": "Server=server;Database=DB_Name;uid=sa;pwd=passforyou;MultipleActiveResultSets=true;Encrypt=False;"
        ```
 
 ### Bước 3: Seed Data và Tạo Table
@@ -24,8 +24,7 @@
    - Chuyển đến layer `Persistence`.
    - Thực thi câu lệnh: `update-database`.
 
-### Bước 4: Chạy Project
-4. **Chạy Project.**
+### Bước 4: Run Project
 
 ## Web API
 ### Tài Khoản và Mật Khẩu
@@ -42,12 +41,12 @@
 - **Client:**
   - Tên Đăng Nhập: client
   - Mật Khẩu: client123
-  - Vai Trò: Client (Truy cập hạn chế)
+  - Vai Trò: Client (Truy cập hạn chế chỉ xem)
 
 ### Vai Trò và Quyền Hạn
 - **Admin:**
   - Toàn quyền truy cập vào tất cả các tính năng và tài nguyên.
 - **Office:**
-  - Truy cập để xem chi tiết và danh sách.
+  - Truy cập để xem chi tiết và danh sách tạo cate và product.
 - **Client:**
   - Truy cập để xem chi tiết và danh sách.
