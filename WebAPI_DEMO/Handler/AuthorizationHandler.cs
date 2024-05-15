@@ -53,6 +53,13 @@ namespace Platinum.WebApi.Home3D.Handler
             try
             {
                 var tokenHandler = new JwtSecurityTokenHandler();
+                var checkJwtTokenHandler = tokenHandler.ReadToken(token) as JwtSecurityToken;
+                var expirationTime = checkJwtTokenHandler?.ValidTo;
+                if (expirationTime <= DateTime.UtcNow)
+                {
+                    return false;
+                }
+
                 var key = Encoding.ASCII.GetBytes(_configuration["JWTSettings:Key"]);
 
                 tokenHandler.ValidateToken(token, new TokenValidationParameters
