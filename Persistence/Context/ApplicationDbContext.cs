@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Domain.Common;
 using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -17,13 +18,24 @@ namespace Persistence.Context
         {
             modelBuilder.Entity<Product>().Property(p => p.Rate).HasColumnType("decimal(10,2)");
 
+            modelBuilder.Entity<BaseEntity>(entity =>
+            {
+                if (Database.IsSqlServer())
+                {
+                    entity.Property(e => e.Id).HasColumnType("uniqueidentifier");
+                }
+                else if (Database.IsNpgsql())
+                {
+                    entity.Property(e => e.Id).HasColumnType("uuid");
+                }
+            });
+
             modelBuilder.Entity<Product>()
                 .HasOne(p => p.Category)
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId);
 
             base.OnModelCreating(modelBuilder);
-
             modelBuilder.Entity<UserRole>()
                 .HasKey(ur => new { ur.UserId, ur.RoleId });
 
@@ -168,6 +180,9 @@ namespace Persistence.Context
                 RoleId = 3,
                 PermissionId = 3
             });
+
+
+            
 
         }
         public DbSet<Product> Products { get; set; }
