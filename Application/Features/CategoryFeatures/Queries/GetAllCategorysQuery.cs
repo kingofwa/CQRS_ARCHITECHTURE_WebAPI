@@ -1,7 +1,6 @@
 ﻿using Application.Dtos;
 using Application.Interfaces;
 using Domain.Entities;
-using DotNetOpenAuth.Messaging;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;

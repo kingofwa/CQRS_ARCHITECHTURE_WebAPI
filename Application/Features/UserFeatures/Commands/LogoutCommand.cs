@@ -1,7 +1,6 @@
 ﻿using Application.Dtos;
 using Application.Interfaces;
 using Domain.Entities;
-using DotNetOpenAuth.OAuth.ChannelElements;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using System;
@@ -19,10 +18,14 @@ namespace Application.Features.UserFeatures.Commands
         public class LogoutCommandHandler : IRequestHandler<LogoutCommand, bool>
         {
             private readonly IHttpContextAccessor _httpContextAccessor;
-            public LogoutCommandHandler(IHttpContextAccessor httpContextAccessor)
+            private readonly ITokenBlacklistService _tokenBlacklistService;
+
+            public LogoutCommandHandler(IHttpContextAccessor httpContextAccessor, ITokenBlacklistService tokenBlacklistService)
             {
                 _httpContextAccessor = httpContextAccessor;
+                _tokenBlacklistService = tokenBlacklistService;
             }
+
             public async Task<bool> Handle(LogoutCommand command, CancellationToken cancellationToken)
             {
                 var token = _httpContextAccessor.HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
@@ -34,21 +37,15 @@ namespace Application.Features.UserFeatures.Commands
 
                     if (jwtToken != null)
                     {
-                        var expirationTime = jwtToken.ValidTo;
-
-                        if (expirationTime > DateTime.UtcNow)
-                        {
-                            var updatedToken = new JwtSecurityToken(jwtToken.Issuer, null, jwtToken.Claims, DateTime.UtcNow.AddDays(-7), jwtToken.ValidTo, jwtToken.SigningCredentials);
-
-                            var tokenString = tokenHandler.WriteToken(updatedToken);
-
-                            return true; 
-                        }
+                        await _tokenBlacklistService.AddTokenToBlacklist(token);
+                        return true;
                     }
                 }
 
-                return false; 
+                return false;
             }
         }
     }
+
+
 }

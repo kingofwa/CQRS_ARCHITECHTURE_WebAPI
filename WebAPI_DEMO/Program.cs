@@ -1,9 +1,7 @@
 ﻿using Application;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
+using Application.Interfaces;
 using Persistence;
 using Platinum.WebApi.Home3D.Handler;
-using System.Text;
 using WebAPI_Demo.Extensions;
 using static WebAPI_Demo.Extensions.ConfigureSwaggerOptions;
 
@@ -12,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddApplication();
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddSingleton<ITokenBlacklistService, TokenBlacklistService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

@@ -1,6 +1,8 @@
 ﻿// <copyright file="JwtMiddleware.cs" company="Platinum">
 // Copyright (c) Platinum. All rights reserved.
 // </copyright>
+using Application.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Persistence.Context;
@@ -14,20 +16,39 @@ namespace Platinum.WebApi.Home3D.Handler
         private readonly RequestDelegate _next;
         private readonly IServiceScopeFactory _serviceScopeFactory;
         private readonly IConfiguration _configuration;
-
-        public AuthorizationHandler(RequestDelegate next, IServiceScopeFactory serviceScopeFactory, IConfiguration configuration)
+        private readonly ITokenBlacklistService _tokenBlacklistService;
+        public AuthorizationHandler(RequestDelegate next, IServiceScopeFactory serviceScopeFactory, IConfiguration configuration, ITokenBlacklistService tokenBlacklistService)
         {
             _next = next;
             _serviceScopeFactory = serviceScopeFactory;
             _configuration = configuration;
+            _tokenBlacklistService = tokenBlacklistService;
         }
+        
+
 
         public async Task Invoke(HttpContext context)
         {
             var token = context.Request.Headers.Authorization.FirstOrDefault()?.Split(" ").Last();
+            bool logout = await _tokenBlacklistService.IsTokenBlacklisted(token);
 
-            if (token != null)
+            var isLogin = context.Request.Path.Value.Contains("login");
+
+            if (token != null && isLogin == false)
             {
+                if (logout)
+                {
+                    context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                    context.Response.ContentType = "application/json";
+
+                    var customResponse = new
+                    {
+                        status = 401,
+                        message = "Unauthorized."
+                    };
+                    await context.Response.WriteAsync(System.Text.Json.JsonSerializer.Serialize(customResponse));
+                    return;
+                }
                 var isAuthorized = await AttachAccountToContext(context, token);
                 if (!isAuthorized)
                 {

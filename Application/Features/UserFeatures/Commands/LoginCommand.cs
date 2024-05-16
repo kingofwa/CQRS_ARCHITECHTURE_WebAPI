@@ -33,23 +33,37 @@ namespace Application.Features.UserFeatures.Commands
         public class LoginCommandCommandHandler : IRequestHandler<LoginCommand, BaseResult<UserAccessInfoDto>>
         {
             private readonly IApplicationDbContext _context;
-            public LoginCommandCommandHandler(IApplicationDbContext context)
+            private readonly ITokenBlacklistService _tokenBlacklistService;
+            private readonly IHttpContextAccessor _httpContextAccessor;
+
+            public LoginCommandCommandHandler(IApplicationDbContext context, ITokenBlacklistService tokenBlacklistService, IHttpContextAccessor httpContextAccessor)
             {
                 _context = context;
+                _tokenBlacklistService = tokenBlacklistService;
+                _httpContextAccessor = httpContextAccessor;
             }
 
             public async Task<BaseResult<UserAccessInfoDto>> Handle(LoginCommand command, CancellationToken cancellationToken)
             {
                 var user = await _context.Users
-                    .Include(x => x.UserRoles).ThenInclude(x =>x.Role)
+                    .Include(x => x.UserRoles).ThenInclude(x => x.Role)
                     .SingleOrDefaultAsync(x => x.Username == command.UserName);
+
                 if (user != null)
                 {
                     var passwordHasher = new PasswordHasher<User>();
                     var passwordVerificationResult = passwordHasher.VerifyHashedPassword(user, user.PasswordHash, command.Password);
+
                     if (passwordVerificationResult == PasswordVerificationResult.Success)
                     {
                         var token = GenerateJwtToken(user);
+
+                        var oldToken = _httpContextAccessor.HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
+                        if (oldToken != null)
+                        {
+                            await _tokenBlacklistService.RemoveTokenFromBlacklist(oldToken);
+                        }
+
                         var result = new UserAccessInfoDto()
                         {
                             AccessToken = token,
@@ -60,15 +74,15 @@ namespace Application.Features.UserFeatures.Commands
                         return new BaseResult<UserAccessInfoDto>()
                         {
                             Data = result,
-                            Success  = true
+                            Success = true
                         };
                     }
                     else
                     {
                         throw new Exception("Invalid password");
                     }
-
                 }
+
                 throw new Exception("Invalid User");
             }
 
@@ -80,7 +94,7 @@ namespace Application.Features.UserFeatures.Commands
                 new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim("uid", user.Id.ToString()),
                 new Claim(ClaimTypes.Name, user.Username)
-                };
+            };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("C1CF4B7DC4C4175B6618DE4F55CA4AAA"));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -90,11 +104,12 @@ namespace Application.Features.UserFeatures.Commands
                     audience: "LeUseLoginOrLogour",
                     claims: claims,
                     expires: DateTime.UtcNow.AddHours(1),
-                signingCredentials: creds);
+                    signingCredentials: creds);
 
                 return new JwtSecurityTokenHandler().WriteToken(token);
             }
         }
     }
+
 
 }

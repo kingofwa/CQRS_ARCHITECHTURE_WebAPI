@@ -6,7 +6,7 @@ using WebAPI_Demo.Filters.Authorizations;
 namespace WebAPI_Demo.Controllers
 {
     [Route("api/user/")]
-    [IgnoreAntiforgeryToken]
+    
     public class UserController : BaseApiController
     {
         [HttpPost]
@@ -18,6 +18,7 @@ namespace WebAPI_Demo.Controllers
 
         [HttpPost]
         [Route("logout")]
+        [IgnoreAntiforgeryToken]
         [ApplicationAuthorizedAttribute]
         public async Task<IActionResult> Logout(LogoutCommand command)
         {
@@ -26,6 +27,7 @@ namespace WebAPI_Demo.Controllers
         
         [HttpGet]
         [Route("getme")]
+        [IgnoreAntiforgeryToken]
         [ApplicationAuthorizedAttribute]
         public async Task<IActionResult> GetMe([FromQuery] GetmeQuery command)
         {
